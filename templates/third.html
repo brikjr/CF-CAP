@@ -1,0 +1,55 @@
+{% extends 'index.html'%}
+
+{% block head %}  
+
+{% endblock %}
+
+{% block body %} 
+<div class="signup-container">
+    <div class="left-container">
+        <h1>
+            CF-CAP - Prescription
+            <p class = "mm" style="font-size: smaller;"><br> Computational Flu or COVID-19 Anticipator and Prescriber</p>
+            <p class="nn"><br>~Through Neural-Networking</p>
+          </h1>
+      <div class="cl1">
+        <img src="{{url_for('static', filename='800px.png')}}">
+      </div>
+    </div>
+    <div class="right-container">
+      <header style="font-weight: bolder;">
+        <label style="font-size: x-large;">Dear {{naam}}</label>
+    <div style="visibility: {{cov}};">
+        <label><br>Syrup zincitotal</label><label><br>5ml</label><label><br>Once a day</label>
+        <label><br><br>Tab limcee</label><label><br>500mg</label><label><br>twice a day</label>
+        <label><br><br>Tab pantocid</label><label><br>40mg</label><label><br>twice a day for 3 days</label>
+    </div> 
+    <div style="visibility:{{fever}};">
+        <label><br>Tab paraceramol</label><label><br>500mg</label><label><br>Whenever fever hits</label>
+
+    </div>
+    <div style="visibility: {{cough}};">
+        <label><br>Tab Montair Lc</label><label><br>1mg</label><label><br>In night once for 3 days</label>
+    </div>
+    <div  style="visibility: {{oxygen}};">
+        <label><br>Oxygen level too low , Consult a doctor</label>
+    </div>
+        
+      </header>
+      <script>
+        function thisFileUpload() {
+            document.getElementById("file").click();
+        };
+</script>
+      <footer>
+        <div class="set">
+         
+        </div>
+      </footer>
+    </div>
+  </div>      
+</form>
+
+
+    
+    {% endblock %}

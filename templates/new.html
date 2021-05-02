@@ -1,0 +1,52 @@
+{% extends 'index.html'%}
+
+{% block head %}  
+
+{% endblock %}
+
+{% block body %} 
+    
+<div class="signup-container">
+    <div class="left-container">
+      <h1>
+        CF-CAP
+        <p class = "mm"> Computational Flu or COVID-19 Anticipator and Prescriber</p>
+        <p class="nn"><br>~Through Neural-Networking</p>
+      </h1>
+      <div class="cl1">
+        <img src="{{url_for('static', filename='800px.png')}}">
+      </div>
+    </div>
+    <div class="right-container">
+      <header>
+        <h1>Dear Patient, We ensure you get the best health care!</h1>
+        
+        <div class="set">
+          
+           <div class="name" >
+            <h2 class="result" style="font-family: Montserrat;"><br><br><br><br>{{message}}<br><br><br><br></h2>
+        </div>
+        
+        </div>
+      </header>
+      
+        <footer>
+            <div class="upload">
+                <form method="POST" enctype="multipart/form-data">
+                    <i> 
+                      <label class="btn-predict" for="image"
+                        style="font-size: 22px; font-weight: bolder; cursor: pointer; color: #807182;"
+                        > Upload
+                    </i>
+                        <input type="file" name="image" onchange="previewFile()" id="image" style="visibility: hidden;">
+                      </label>
+                        <img src="{{isrc}}">
+                      <a><input id="next" type="submit" value="PREDICT" style="display: none;"><button id="next">Predict</button></input></a>
+                </form>
+            </div>
+        </footer>
+        <a href="{{ url_for('unt') }}" style="text-decoration: none; font-size: large; cursor: pointer; color: #807182; border:#da8896;"><button>Click here to precribe Medicine</a></button>
+      </div>
+</div>      
+</form>
+{% endblock %}

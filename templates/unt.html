@@ -1,0 +1,79 @@
+{% extends 'index.html'%}
+
+{% block head %}  
+
+{% endblock %}
+
+{% block body %} 
+<div class="signup-container">
+    <div class="left-container">
+      <h1>
+        CF-CAP
+        <p class = "mm"> Computational Flu or COVID-19 Anticipator and Prescriber</p>
+        <p class="nn"><br>~Through Neural-Networking</p>
+      </h1>
+      <div class="cl1">
+        <img src="{{url_for('static', filename='800px.png')}}">
+      </div>
+    </div>
+    <div class="right-container">
+      <header>
+        <h1>Dear Patient, We ensure you get the best health care!</h1>
+        <form method="POST" enctype="multipart/form-data">
+        <div class="set">
+          
+           <div action="#" class="name" >
+            <label for="name">Name</label>
+            <input id="name" name="fname" placeholder="Full name" type="text" name="nm"></input>
+          </div>
+          </div>
+        <div class="set">
+          <div class="Xbreed">
+            <label for="Xbreed">Temperature</label>
+            <input id="Xbreed" placeholder="In Fahrenheit" name="temp" type="text"></input>
+          </div>
+          <div class="Xbirthday">
+            <label for="Xbirthday">Oxygen Level</label>
+            <input id="Xbirthday" placeholder="%" name="oxy" type="text"></input>
+          </div>
+        </div>
+        
+        <div class="set">
+          <div class="Xgender">
+            <label >Cough</label>
+            <div class="radio-container">
+              <input name="cough" type="radio" id="yes" value="yes"><label for="yes">Yes</label></input>
+              
+              <input name="cough" type="radio" id="no" value="no"><label for="no">No</label></input>
+              
+            </div>
+          </div>
+          <div class="Xspayed-neutered">
+            <label>COVID-19</label>
+            <div class="radio-container">
+              <input name="BP" type="radio" id="BP-yes" value="yes"><label for="BP-yes">Positive</label></input>
+              
+              <input name="BP" type="radio" id="BP-no" value="no"><label for="BP-no">Negative</label></input>
+              
+            </div>
+          </div>
+        </div>
+       
+      </header>
+      <script>
+        function thisFileUpload() {
+            document.getElementById("file").click();
+        };
+    </script>
+      <footer>
+        <div class="set">
+          
+         <a><input id="next" type="submit" value="Predict" style="display: none;"><button id="next">Prescribe</button></input></a> 
+        </div>
+      </footer>
+    </div>
+  </div>      
+</form>
+
+
+{% endblock %}
