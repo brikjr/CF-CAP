@@ -1,4 +1,5 @@
 from flask import Flask, flash, render_template, redirect, request, url_for
+from flask_ngrok import run_with_ngrok
 import os
 import cv2
 import numpy as np
@@ -7,6 +8,7 @@ from keras.preprocessing import image
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
+run_with_ngrok(app)
 app.config['SECRET_KEY'] = "supertopsecretprivatekey"
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
 
@@ -75,4 +77,4 @@ def unt():
 
 
 if __name__ == "__main__":
-    app.run('127.0.0.1', debug=True)
+    app.run()
