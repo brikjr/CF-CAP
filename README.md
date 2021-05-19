@@ -3,11 +3,12 @@ Computational flu or COVID-19 anticipator and prescriber. Dataset link :- https:
 
 ### Make sure to install all the dependencies.
 
-Flask
-ngrok
-opencv
-numpy
-keras
-werkzeug
+- Flask
+- ngrok
+- opencv
+- numpy
+- keras
+- tensorflow
+- werkzeug
 
 We used Python3 
