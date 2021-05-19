@@ -13,4 +13,4 @@ Computational flu or COVID-19 anticipator and prescriber. We created a deep lear
 
 ## Screenshots
 
-![](/static/img/site (1))
+![](/static/img/site (1).png)
