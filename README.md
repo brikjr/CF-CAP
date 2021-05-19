@@ -11,3 +11,6 @@ Computational flu or COVID-19 anticipator and prescriber. We created a deep lear
 - tensorflow
 - werkzeug
 
+## Screenshots
+
+![](/static/img/site (1))
