@@ -1,0 +1,13 @@
+# CF-CAP
+Computational flu or COVID-19 anticipator and prescriber. Dataset link :- https://www.kaggle.com/bachrr/covid-chest-xray. We created a deep learning model based on VGG16 architecture to make a classifier that classifies chest Xrays into two categories (COVID positive and COVID negative). Then Used the outcome of the classifier to Prescribe CDSCO certified drugs which are widely available in the Indian market
+
+### Make sure to install all the dependencies.
+
+Flask
+ngrok
+opencv
+numpy
+keras
+werkzeug
+
+We used Python3 
