@@ -19,3 +19,8 @@ Computational flu or COVID-19 anticipator and prescriber. We created a deep lear
 ![](/static/img/site%20(3).png)
 ![](/static/img/site%20(4).png)
 ![](/static/img/site%20(5).png)
+
+## News article that covered our project!
+> Top Tier Hindi Newspaper - Patrika
+
+![](/static/img/site%20(1).png)
